@@ -1,0 +1,55 @@
+Behavioral patterns provide solution for the better interaction between objects 
+and how to provide lose coupling and flexibility to extend easily.
+
+Behavioural patterns characterize the ways in which classes and objects interact
+and distribute responsibility.
+
+Behavioral pattern is a design pattern through which common communication patterns are 
+identified between different objects. This way the communication is carried out in more 
+flexible way.
+
+use behavioral patterns to encapsulate algorithms and dynamically select them at run time.
+
+A behavioral pattern abstracts an action you want to take from the object or class 
+that takes the action. By changing the object or class, you can change the algorithm used, 
+the objects affected, or the behavior, while still retaining the same basic interface for
+ client classes.
+ 
+
+Behavioral Design Pattern
+
+Chain of responsibility
+A chain of objects is created to deal with the request so that no request goes back unfulfilled.
+
+Command
+Command pattern deals with requests by hiding it inside an object as a command and sent to be to invoker object which then passes it to an appropriate object that can fulfill the request.
+
+Interpreter
+Interpreter pattern is used for language or expression evaluation by creating an interface that tells the context for interpretation.
+
+Iterator
+Iterator pattern is used to provide sequential access to a number elements present inside a collection object without any relevant information exchange.
+
+Mediator
+Mediator pattern provides easy communication through its mediator class that allows communication for several classes.
+
+Memento
+This pattern involves the working of three classes Memento, CareTaker, and Originator. Memento holds the restorable state of the object. Originator’s job is the creation and storing of state and CareTaker’s job is the restoration of memento states.
+
+Null Object
+Null Object is used instead of specifying a Null value and is used to represent a particular operation that does nothing when created. It is basically a check for Null value without the presence of the value.
+
+Observer
+A One-to-Many relationship calls for the need of Observer pattern to check the relative dependencies of objects.
+
+State
+In State pattern, the behavior of a class varies with its state and is thus represented by the context object.
+
+Strategy
+Strategy pattern deals with the change in class behavior at runtime. The objects consist of strategies and the context object judges the behavior at runtime of each strategy.
+
+Template method
+It is used with components having similarity where a template of the code may be implemented to test both the components. The code can be changed with minor alterations.
+
+Visitor
+A Visitor performs a set of operations on an element class and changes its behavior of execution. Thus the variance in the behavior of element class is dependent on the change in visitor class.
