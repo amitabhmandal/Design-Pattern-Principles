@@ -14,7 +14,10 @@ A behavioral pattern abstracts an action you want to take from the object or cla
 that takes the action. By changing the object or class, you can change the algorithm used, 
 the objects affected, or the behavior, while still retaining the same basic interface for
  client classes.
- 
+
+
+The intent of Behavioral design pattern is the interaction and cooperation between a
+set of objects to perform a task that no single object can carry out by itself
 
 Behavioral Design Pattern
 
