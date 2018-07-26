@@ -1,0 +1,38 @@
+**************
+Introduction
+**************
+
+
+----------------
+What is a Proxy?
+----------------
+We need a standing or a placeholder for a real Object.
+Or a placeholder object which can work in replace of another object.
+
+=======================
+Why do we need a Proxy?
+=======================
+Proxy acts behalf on an Object and is used for a lot of reasons some of the main reasons
+are as follows:
+1. Protection Proxy - Control access to original Object's operations
+2. Remote Proxy     - Provides a local representation of a remote Object
+3. Virtual Proxy    - Delays construction of original Object until absolutely necessary.
+
+----------------------------------
+Important Characteristics of Proxy
+----------------------------------
+Client is unaware of existence of proxy.
+Proxy performs it's work transparently.
+Thereby client does not need to call any method to work on the proxy.
+
++++++++++++++++++++++++++++++++
+Examples of Proxy in Real Life:
++++++++++++++++++++++++++++++++
+
+1. Lazy Loading of collections in Hibernate
+2. AOP method level security provided in Spring framework
+3. Various frameworks which allow to create web service stubs or RMI.
+
+
+ 
+

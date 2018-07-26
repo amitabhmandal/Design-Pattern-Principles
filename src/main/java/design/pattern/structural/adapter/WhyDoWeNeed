@@ -1,0 +1,21 @@
+We have an existing object which provides the functionality the client needs.
+
+But the client code needs can't use the object because it expects an Object of different interface.
+
+
+Adapter design patterns come under the structural design pattern, according to this
+design pattern two incompatible classes work together that couldn't otherwise
+because of incompatible interfaces. This pattern works as a bridge between two
+incompatible interfaces. This pattern is used when two inferences of the application
+are incompatible in their functionalities, but these functionalities need to be
+integrated as a business requirement.
+
+Using Adapter Pattern we can make the existing object work with client by adapting the object to the 
+client's expected interface.
+
+This pattern is also called as wrapper as it wraps existing object.
+
+There are two variations of the adapter pattern 
+1. Class Adapter or Two way Adapter 
+2. Object Adapter.
+

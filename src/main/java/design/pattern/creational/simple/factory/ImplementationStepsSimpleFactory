@@ -1,0 +1,20 @@
+___________
+First Step
+___________
+We start by creating a simple class which acts as simple factory
+
+
+___________
+Second Step
+___________
+Add a method which returns the desired object instance.
+This method is typically static and will accept some argument to decide 
+which class to instantiate.
+
+___________
+Third Step : Optional if not required skip.
+___________
+You can also provide some additional arguments which will be used to instantiate
+Objects.
+
+

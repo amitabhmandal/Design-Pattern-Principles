@@ -1,0 +1,32 @@
+Observer is a such a useful design pattern that comes in shipped with JDK.
+__________
+Example: 1
+__________
+java.util.Observer interface and java.util.Observable class 
+
+
+__________
+Example: 2
+__________
+Another commonly used example is various listeners in Java Servlet application.
+We can create various listeners by implementing interfaces like
+HttpSessionlistener and ServletRequestListener.
+
+We can then register these listeners with ServletContext's addListener method.
+These listeners are notified when certain events occur like creation of a request
+or addition of a value to the session.
+
+If the listener is registered then only notification will be send out. This is how
+ServletContext listener is optimizing it's observer implementation so that it does not
+notify all observers for each event that happens in the lifetime of the application.
+
+
+
+__________
+Example: 3
+__________
+Within spring we can implement ApplicationListener interface.
+It is part org.springframework.context.ApplicationListener interface.
+
+
+

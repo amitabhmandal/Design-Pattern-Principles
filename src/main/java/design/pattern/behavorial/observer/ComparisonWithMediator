@@ -1,0 +1,24 @@
+Comparison with Mediator
+
+It only makes sense to do comparison if the design patterns are relatable.
+If they are totally different then it does not make sense.
+Hence it does not make sense to compare Observer with Memento.
+
+
+Thereby similarities exist between mediator and observer design pattern
+hence comparison is warranted.
+
+-------------------
+Relationship  Style
+-------------------
+Observer: It has one to many relationships between Objects
+Mediator: It has many to many relationships between Objects
+
+
+-------------------
+Communication  Style
+-------------------
+Observer: The communication is simple and can be described as publisher-subscribe
+Mediator: Communication is not simple. All objects participating are notified of change
+in any one of them.
+

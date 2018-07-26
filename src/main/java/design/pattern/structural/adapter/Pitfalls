@@ -1,0 +1,19 @@
+----------
+Pitfall #1
+----------
+
+Using a class adapter is a problem. Since using the target interface and adaptee 
+to extend our adapter we can create a class adapter.
+However it creates an object which exposes unrelated methods in parts of your code
+polluting it.
+
+Avoid class adapters
+----------
+Pitfall #2
+----------
+It is tempting to do a lot of things in our adapter. Since we  have access to 
+the adaptee object which might include validation, modification etc which is not
+at all warranted.
+
+Hence huge recommendation not to do anything else besides interface translation.
+

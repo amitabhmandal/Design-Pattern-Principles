@@ -1,0 +1,35 @@
+----------------------------------------------------
+Differences between simple factory vs factory method
+----------------------------------------------------
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Object creation where and how
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+--------------
+Simple factory :
+-------------- 
+It is simply an encapsulation of our object creation logic.
+We simply move our instantiation logic away from the client code.
+Typically in a static method
+
+--------------
+Factory method :
+-------------- 
+Factory method is more useful when you want to delegate
+object creation to subclasses.
+
+@@@@@@@@@@@@@@@@@@
+Subclass awareness
+@@@@@@@@@@@@@@@@@@
+--------------
+Simple factory :
+-------------- 
+It knows all about the classes whose objects it can create
+
+
+--------------
+Factory method :
+--------------
+In factory method we dont know in advance about all product subclasses.
+

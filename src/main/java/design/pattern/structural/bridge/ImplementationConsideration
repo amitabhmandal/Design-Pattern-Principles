@@ -1,0 +1,10 @@
+===============================
+Implementation Consideration #1
+===============================
+
+In case we are going to have a single implementation then we can skip creating
+abstract implementor.
+
+===============================
+Implementation Consideration #2
+===============================

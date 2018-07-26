@@ -1,0 +1,21 @@
+**********
+Pitfall #1
+**********
+Every setter method triggering updates may be too much if we have a client 
+setting properties after one another on our observable.
+
+**********
+Pitfall #2
+**********
+Also each update becomes expensive as no. of observers. increase and we have 
+one or more slow observers in the list.
+
+**********
+Pitfall #3
+**********
+If observers start calling back the subject to identify what changed 
+then this can add up to quite a bit of overhead.
+
+
+
+

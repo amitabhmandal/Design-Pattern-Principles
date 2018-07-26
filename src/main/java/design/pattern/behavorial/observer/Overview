@@ -1,0 +1,59 @@
+Implement Observer
+
+*******************************
+Observer Interface Requirements
+*******************************
+
+We define an interface for observer.
+This interface will be implemented by all our listeners.
+
+This contains a single method which shall notify the change of subjects.
+
+It is called by all the observable or subjects to notify the listeners that it's state
+has changed.
+
+
+********************************************
+Subject or Observable Interface Requirements
+********************************************
+This is needed if we have listeners subscribed to multiple objects.
+
+If there is a single subject that is going to send the notification then creating a single
+concrete class implementation makes more sense then we don't need the interface.
+
+
+********************************************************
+Implementing of Subject means the following requirements
+********************************************************
+Implementing of subjects providing implementation of the following requirements which
+considers 
+1. registration and 
+2. de-registration of subjects information requested by observers.
+3. Most importantly we need to provide methods which can be used by listeners to query the 
+state information.
+
+
+****************************************
+Collection requirement inside observable
+****************************************
+Observable will have some sort of collection data structure to maintain the list of 
+listeners listening to the state change notification to be send out by observable.
+
+
+******************************
+Concrete Observers Requirement
+******************************
+Concrete observers use a reference passed to them to call the subject for getting more 
+information about the state. If we are passing the state changed in the notify method
+then this is not required.
+
+
+
+******************************
+MOST IMPORTANT THING
+******************************
+We should prevent any infinite loops for notification else the system will not come out
+of it.
+
+
+

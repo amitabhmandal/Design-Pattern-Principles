@@ -1,0 +1,24 @@
+What it is?
+
+It allows us to define new operations that can be performed on an object without changing
+the class definition of the object.
+
+How does it Work?
+Let's consider a different object called visitor.
+The purpose of this object is to visit all nodes in an object structure.
+
+Each time our visitor visits a particular object from the object structure that object
+calls a specific method on visitor passing itself as an argument.
+
+Our Visitor has methods defined which are specific to that class structure.
+
+All objects of that class knows about that specific method.
+
+And those objects are going to call the respective method and pass them as argument.
+
+Each time we need a new operation we create a subclass of the visitor implement the operation
+in the class and visit the object structure.
+
+Objects themselves implement a very simple accept method, So in this method we are going to 
+pass visitor as an argument. Once we call this method all objects know about the method which 
+is present in Visitor 

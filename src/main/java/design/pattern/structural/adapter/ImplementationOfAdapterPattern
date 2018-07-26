@@ -1,0 +1,14 @@
+Steps followed for Adapter Pattern
+
+Implement an Adapter
+
+We start by creating an Adapter Class
+1. Adapter must implement the interface expected by client
+2. Within the adapter class there are two ways.
+	a) By extending from the adaptee class. We are going to simply forward the method
+	to another method inherited from adaptee.
+	
+	b) By object adapter we are going to implement target interface and accept
+	adaptee as constructor argument in adapter ie make use of composition.
+	
+	 

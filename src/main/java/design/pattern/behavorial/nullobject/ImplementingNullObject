@@ -1,0 +1,18 @@
+Step #1
+We create a new class that represents our Null object by extending from our base
+class or implementing from interface.
+
+Step #2
+In the null object implementation, for each method we will do nothing.
+However doing nothing can mean different things in different implementations. 
+Example: If a method in a null object returns something we then we can 
+a) either return another null object a 
+b) predefined value or 
+c) null.
+
+Step #3
+Code which creates object from our implementation, will create and pass our null 
+object in a specific situation.
+
+So if we deciding on a criteria which sub class to instantiate, and we get a value for which 
+there is no subclass we can create object of our null class and pass it to the calling object.

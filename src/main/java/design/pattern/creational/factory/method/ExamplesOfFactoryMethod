@@ -1,0 +1,33 @@
+--------------------
+Example : 1
+--------------------
+
+The java.util.Collection or java.util.AbstractCollection has an abstract method called
+iterator().
+
+This method is an example of factory method.
+
+public abstract class AbstractCollection<E> implements Collection<E> {
+    /**
+     * Sole constructor.  (For invocation by subclass constructors, typically
+     * implicit.)
+     */
+    protected AbstractCollection() {
+    }
+
+    // Query Operations
+
+    /**
+     * Returns an iterator over the elements contained in this collection.
+     *
+     * @return an iterator over the elements contained in this collection
+     */
+    public abstract Iterator<E> iterator();
+
+REMEMBER THE MOST DEFINING CHARACTERISTICS OF FACTORY METHOD PATTERN IS
+****************************************** 
+"SUBCLASSES PROVIDING THE ACTUAL INSTANCE"
+******************************************
+
+So static methods returning object instances are technically not GoF factory methods.
+

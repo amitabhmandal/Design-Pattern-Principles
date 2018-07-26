@@ -1,0 +1,31 @@
+@@@@@@@@@@@@@@@@@@@@@@@
+What is Factory Method?
+@@@@@@@@@@@@@@@@@@@@@@@
+
+Whenever we want to move the object creation logic which might be spread through out the 
+application to a seperate class(encapsulate in a seperate class) we can use factory method!
+
+
+It is similar to simple factory however it add something new to factory method pattern.
+
+------------
+FIRST REASON: It is better than simple factory
+------------
+Whenever we need to use this pattern we dont know in advance which class we may need
+to instantiate beforehand 
+
+-------------
+SECOND REASON: It is better than simple factory
+------------
+allow new classes to the system and handle their creation without affecting client code.
+
+------------------
+How it is achieved:
+------------------
+Factory method achieves this by delegating the object creation functionality to the sub classes.
+They do over-riding the factory method.
+
+
+
+
+ 

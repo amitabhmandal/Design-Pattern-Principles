@@ -1,0 +1,42 @@
+Coupling: Degree of connectivity among things
+
+
+It also means what you depend on or what you need to do the talking.
+
+
+Worst form of Coupling : Inheritance.
+
+It increases coupling between things.
+
+ 
+1. Try to see if you can remove coupling.
+
+2. Can't remove all the dependencies. If we remove all the dependencies then the 
+system shall become so stable that it will not be able to run.
+
+Hence in order to maintain the functionality of the system we need to have some sort
+of dependency.
+
+1. Get rid of it.
+2. Make it loose instead of tight.
+
+
+Depending on a class is tight coupling. Depending on an interface is loose coupling.
+
+Use caution: A good design has high cohesion and loose coupling.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 

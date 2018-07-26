@@ -1,0 +1,45 @@
+It is structural pattern
+it decouples an abstraction from its implementation and both can vary independently
+It is possible because composition has been used in place of inheritance
+
+The primary function of a Bridge is to decouple an abstraction from its implementation.
+
+--------
+Premise:
+--------
+Typically when we provide an implementation of interface then the implementation and abstraction are generally coupled to 
+each other in normal inheritance.
+
+-----------------------
+What it tries to solve:
+-----------------------
+Thus the bridge design pattern can decouple our implementation and abstraction so that they can both change without 
+affecting each other.
+
+
+--------------
+How it Solves: 
+--------------
+We achieve this feat by creating two seperate inheritance hierarchies. one for implementation and another for abstraction.
+
+Abstraction is what our client code uses. So our client is going to use one of these classes from abstraction.
+
+We have a seperate hierarchy for implementations:
+
+These two seperate hierarchies are connected through composition.
+
+This seems quite impossible to do.
+
+Whenever we are talking about abstraction - It is talking about the interface used by the client
+Whenever we are talking about implementation - It is talking about the class that can provide that functionality
+
+
+
+
+
+
+
+
+ 
+
+

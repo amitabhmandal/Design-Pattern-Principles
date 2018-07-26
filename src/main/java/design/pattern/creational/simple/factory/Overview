@@ -1,0 +1,45 @@
+
+****************************************************
+Simple factory is not considered as a design Pattern
+****************************************************
+
+
+********************************************
+What problem does the simple factory solves?
+********************************************
+Multiple types can be instantiated and the choice is based on simple 
+criteria
+
+This is a code example where simple factory finds it's use.
+
+if(key.equalsIgnoreCase("Pudding"){
+	{
+		//Instantiate pudding object
+	}
+else if (key.equalsIgnoreCase("cake"){
+	{
+		//Instantiate cake Object
+	}
+}
+
+
+
+The whole idea is to move this instantiation logic into a seperate class inside
+a static method.
+
+
+*********************************************
+Why is it not considered as a design Pattern?
+*********************************************
+
+Some do not consider simple factory to be a design pattern as it's simply
+a method that encapsulates object instantiation. Nothing complex goes on in that 
+method.
+
+** We are simply studying simple factory as it often confused with the
+factory method pattern.
+
+
+ 
+
+

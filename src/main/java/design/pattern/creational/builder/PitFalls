@@ -1,0 +1,8 @@
+@@@@@@@@@@@@@@@@@@@@
+PITFALL # 1
+@@@@@@@@@@@@@@@@@@@@
+It is quite complex pattern to implement since there are lot many methods to used
+specially when we are returning this from the methods.
+
+
+Other than that there is no pitfalls unless and until it is implemented properly.

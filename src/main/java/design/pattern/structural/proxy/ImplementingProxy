@@ -1,0 +1,64 @@
+
+We start by implementing a Proxy
+
+********
+STEP : 1
+********
+The requirement is that the proxy class is going to implement the same interface as
+implemented by the real object.
+
+********
+STEP : 2
+********
+We can either create the real object later or ask for one in constructor of the proxy.
+Depends on the type of application we are working with and the type of functionality we are
+looking for.
+
+********
+STEP : 3
+********
+In method implementations of proxy we implement proxy's functionality before delegating to real
+Object. 
+-----------
+Check done>> : And if the result is ok we then only proceed to the real object.
+___________
+For example: If it is protection proxy we can write some authentication code and when it succeeds
+then only we push ourselves to the real object.
+
+#################################################################################################
+
+++++++++++++++++++++++++
+Very important Question:
+++++++++++++++++++++++++
+====================================================
+How to provide client with an instance of the Proxy?
+====================================================
+
+*********
+OPTION -1
+*********  
+can be we can provide the client a factory which the client uses. 
+And that factory shall transparently create a proxy object instead of a real object and give it to
+client
+
+
+*********
+OPTION -2
+*********
+We can compose the client so that, when we are creating an object of a certain class that needs
+a proxy we can give a proxy in the constructor of such a class.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+THESE ARE CALLED STATIC PROXIES: The above steps executes a static proxies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+JAVA ALSO PROVIDES DYNAMIC PROXIES: 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+All we need an interface and Java shall helps to create
+dynamic proxies while your application is running.
+
+
+
+

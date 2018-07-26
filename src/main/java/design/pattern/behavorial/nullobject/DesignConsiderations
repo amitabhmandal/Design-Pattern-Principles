@@ -1,0 +1,10 @@
+Since null objects do not have any states and no complex behavior they are good candidate
+for singleton pattern.
+
+We use single instance of null object everywhere.
+
+Null objects are useful in many other design patterns like state to represent a null state,
+in strategy pattern to provide a strategy where no action is taken on input.
+
+
+

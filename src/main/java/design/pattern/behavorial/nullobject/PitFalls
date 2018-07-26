@@ -1,0 +1,6 @@
+#1
+Creating of Null object might not be possible in all scenarios.
+Some classes may be expected to cause a change and absence of that change may cause
+other classes and operations to fail.
+
+#2

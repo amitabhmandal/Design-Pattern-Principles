@@ -1,0 +1,8 @@
+In Simple factory there are two important actors.
+
+1. A Product interface abstract class where in we can instantiate depending
+on the input parameter which sub class to be instantiated
+
+2. A static factory method which will give a call to the product interface or
+abstract class.
+

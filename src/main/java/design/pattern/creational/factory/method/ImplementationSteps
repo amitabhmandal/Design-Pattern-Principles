@@ -1,0 +1,25 @@
+We start by creating a class for our creator
+
+Creator itself can be concrete if it can provide a default object or it can
+be abstract
+
+Implementations will override the method and return an object.
+
+
+Remember: Factory method is simply a method that can be over-ridden in one 
+of it's subclasses.
+
+
+Creator does not have to be an abstract class. 
+It can provide a default object if not other subclass can handle the
+creation.
+
+If it cannot provide the default object then our creator will provide
+an abstract factory method, then our class itself will become abstract.
+
+Implementations of our creator will over-ride the factory method and provide
+an Object.
+
+
+
+

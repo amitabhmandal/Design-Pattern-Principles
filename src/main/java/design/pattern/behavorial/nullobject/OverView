@@ -1,0 +1,50 @@
+What is Null Object Design Pattern
+
+We use null value to represent an absence of an object.
+
+It is also to represent that this particular reference does not point to any object.
+=====================
+What is A Null Object
+=====================
+
+Using null object design pattern we can provide an alternate representation to indicate 
+the absence of an object.
+
+Using this pattern we dont have to do null check on an object wherever we are expecting null.
+
+Most important characteristic of null object is that it will do nothing or store nothing 
+when an operation is called on it.
+
+Typically in our conventional code if we find that an object reference is null then we don't 
+do anything with that reference and exit from the code.
+
+===============================================
+Benefit of Using Null Object vs Null Reference
+===============================================
+Same thing is going to happen here with the null object.
+The code that is going to use the null object would not have to consider a possibility that it
+is going to use a null reference.
+
+
+Because we are going to achieve the same thing using null object.
+
+Null object seems like a proxy. As proxy stands in for a real object. Null object seems like
+a proxy.
+========================================
+Difference between Null Object and Proxy
+========================================
+However a proxy at some point of time will transform into a real object and even in absence
+of the real object will provide some behavior with some side effect. 
+Null object does not transform into a real object. Null objects dont transform into real objects.
+
+=================================
+Best Use Case of how Null Objects
+=================================
+
+If someone is asking to provide a proper object and we cannot provide a proper object.
+And we cannot provide a proper implementation or correct implementation then we can return
+a null object and the class and the class or code has asked us to provide an object will work
+flawlessly wihtout using NULL Checks.
+
+
+

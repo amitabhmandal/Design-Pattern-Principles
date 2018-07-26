@@ -1,0 +1,12 @@
+Difference #1
+Null Objects never transform into a real object or even provide an indirection to a real object
+
+
+Proxies eventually will transform into a real object 
+
+Difference #2
+Null objects do not act on behalf of real object. Its job has to do nothing
+
+In absence of real object proxies will provide matching behavior to real object.
+
+

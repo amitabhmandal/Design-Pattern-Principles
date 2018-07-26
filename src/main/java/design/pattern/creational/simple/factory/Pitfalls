@@ -1,0 +1,9 @@
+Disadvantages
+
+Criteria used by simple factory to decide which object to instantiate can get more convoluted
+or complex over time. 
+
+If you find yourself in such situation then use factory method design pattern.
+
+
+

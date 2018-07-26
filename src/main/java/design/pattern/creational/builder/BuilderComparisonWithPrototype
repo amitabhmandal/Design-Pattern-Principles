@@ -1,0 +1,39 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Builder Comparison with ProtoType
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Prototype: It uses Object cloning. It clones the existing Object and return the object. 
+
+
+
+@@@@@@@@@@@@@@@@@@@@
+Usage of Constructor
+@@@@@@@@@@@@@@@@@@@@
+Builder  : We will have a complex constructor and the builder allows us to work with that 
+constructor.
+
+Prototype: Prototype allows altogether skip using constructor. 
+Whoever is going to create the  prototype the design pattern will be calling the 
+clone method to create the object.
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+When used with legacy code
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Builder  : We can create a seperate class and so that it can allow to work with legacy code.
+ 
+Prototype: In java this pattern works using clone method and needs to modify existing code 
+so that it may work with legacy code.
+In this particular example we work by over-writing the clone method in object class.
+So with prototype design pattern it might not always be possible or feasible to work
+with legacy code 
+
+
+
+
+
+Builder  : 
+Prototype:

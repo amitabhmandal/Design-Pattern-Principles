@@ -1,0 +1,62 @@
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+In the UML Diagram there are 
+4 distinct roles.
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+@@@@@@@@@@@@@@@@@@
+Role #1 : Director
+@@@@@@@@@@@@@@@@@@
+We know builder provides methods to build the various parts.
+Someone has to call the builder methods to construct the object.
+
+There might be a sequence in which these might be called.
+There is a logic in which the builder needs to be used.
+
+So there is a logic in which the builder needs to be used and that logic is provided by the
+director.
+So the director knows how to use the builder object/methods to create the final product.
+
+
+
+@@@@@@@@@@@@@@@@@@
+Role #1 : Builder : Interface providing methods.
+@@@@@@@@@@@@@@@@@@
+
+This interface will have methods which will be provided to the users which will allow them
+to build parts of the object(ie product in our case).
+
+Builder allows us to specify multiple values one at a time. so that becomes easy to construct 
+final argument.
+
+Builder also provides a method to assemble the final object.
+
+
+Builder also provide a method to query an already build object.
+Once you have build the object we can use the getProduct method to fetch the build object.
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+Role #1 : Concrete Builder
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+If my builder is an interface or an abstract class then the concrete builder is an implementation
+of that.
+
+It will contain the methods to construct part and final object.
+Keeps track of the product it creates.
+
+
+
+@@@@@@@@@@@@@@@@@@
+Role #1 : Product   : Final End Result Requirement
+@@@@@@@@@@@@@@@@@@	
+We want to create the objects of this class.
+Final complex object that we want to create.
+This is the class we are going to build in our builder.
+And creating a product object by itself is a complex process.
+
+
+
+
+

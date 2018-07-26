@@ -1,0 +1,17 @@
+----------
+Pitfall #1
+----------
+It is somewhat complex to implement as more number of classes are involved in the implementation.
+They need to be more unit testing.
+
+----------
+Pitfall #2
+----------
+You have to start factory method design from the beginning. it's is not easy to refactor
+existing code into factory method pattern.
+
+----------
+Pitfall #3
+----------
+Sometimes this pattern forces you to subclass to create proper instances.
+

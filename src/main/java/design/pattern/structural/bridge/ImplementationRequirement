@@ -1,0 +1,37 @@
+=========================================================
+We start by defining our abstraction needed by our client
+=========================================================
+
+STEP #1
+We need to have methods in our base class or interface that would be used by our client.
+
+
+STEP #2
+We can optionally define more refined abstraction and provide more specialized operations.
+This abstraction can be a single class not mandatory we need to have multiple child classes.
+
+MORE IMPORTANTLY: This abstraction does not need to be an abstract class or interface. We are talking
+about methods which abstract out the complexity of the implementation from the client.
+
+So abstraction is not an abstract class or interface. 
+
+It is simply a method that hides what goes on while executing that functionality.
+
+THAT IS WHAT ABSTRACTION IS.
+
+Thus from the concept it can be a regular class and we can still call it abstraction because
+it hides how that operation is carried out.
+ 
+
+
+STEP #3.
+
+Then we can define our implementor next. It can be a simple class or interface. It does contain 
+methods that do not correspond to the abstraction.  Implementor methods do not have to match
+with our abstraction. (THIS DOES NOT NEED TO BE FOLLOWED)
+We can also have one single class. However abstraction can carry out's work by using implementor methods.
+
+
+The object of Abstractions is created by using instance of concrete implementors which is used by methods in abstraction.
+
+

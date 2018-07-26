@@ -1,0 +1,38 @@
+===============================
+Implementation Consideration #1
+===============================
+
+The amount of work that happens on the adapter class depends on the difference between target interface and object
+being adopted. If method arguments are same or similar adapter have less work to do.
+
+If the target interface is using some arguments then in the adapter class we might need to do some translation.
+
+===============================
+Implementation Consideration #2
+===============================
+When using adapter pattern technically we can over-ride some of the adaptee's behavior. But this has to be avoided
+as you end up with adapter that behave differently than adaptee. Fixing defects is not easy anymore.
+
+=======================
+Design Consideration #1
+=======================
+Where Object adapter is best suited for design:
+
+In a Java class, "adapter class" may not be possible if both the target and adaptee are concrete classes. In such a
+case the "object adapter" is the only solution.
+
+=======================
+Design Consideration #2
+=======================
+A class adapter is called as a two way adapter, since it can stand in for both the target interface and for the adaptee.
+That is we can use of adapter where either the target interface is expected as well as where an adaptee object is expected.
+
+
+
+
+
+
+
+
+
+ 

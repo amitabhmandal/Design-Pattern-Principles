@@ -1,0 +1,35 @@
+___________________
+Real World Examples
+___________________
+
+Within the java.text.NumberFormat the following example represents a simple factory example
+
+
+private static class NumberFormatGetter
+        implements LocaleServiceProviderPool.LocalizedObjectGetter<NumberFormatProvider,
+                                                                   NumberFormat> {
+        private static final NumberFormatGetter INSTANCE = new NumberFormatGetter();
+
+        public NumberFormat getObject(NumberFormatProvider numberFormatProvider,
+                                Locale locale,
+                                String key,
+                                Object... params) {
+            assert params.length == 1;
+            int choice = (Integer)params[0];
+
+            switch (choice) {
+            case NUMBERSTYLE:
+                return numberFormatProvider.getNumberInstance(locale);
+            case PERCENTSTYLE:
+                return numberFormatProvider.getPercentInstance(locale);
+            case CURRENCYSTYLE:
+                return numberFormatProvider.getCurrencyInstance(locale);
+            case INTEGERSTYLE:
+                return numberFormatProvider.getIntegerInstance(locale);
+            default:
+                assert false : choice;
+            }
+
+            return null;
+        }
+    }

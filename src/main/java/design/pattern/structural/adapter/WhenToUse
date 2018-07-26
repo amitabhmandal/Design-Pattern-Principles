@@ -1,0 +1,16 @@
+Consideration #1
+When an outside component provides captivating functionality that we’d like to 
+reuse, but it’s incompatible with our current application. A suitable Adapter can
+ be developed to make them compatible with each other
+ 
+Consideration #2
+When our application is not compatible with the interface that our client is expecting
+
+Consideration #3
+When we want to reuse legacy code in our application without making any modification 
+in the original code
+
+Consideration #4
+Adapter is used when you have an abstract interface, and you want to map that 
+interface to another object which has similar functional role, but a different 
+interface.

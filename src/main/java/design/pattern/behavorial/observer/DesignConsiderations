@@ -1,0 +1,64 @@
+Most important design consideration
+
+#################
+Consideration # 1
+#################
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+To reduce the number of notifications which needs to be send when an observable state
+updates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the example executed we have only a single attach method publishing to all 
+the observers. But in reality what we saw that we had a priceObserver which was
+interested in price change and a quantity observer which is interested in quantity change.
+
+This gives a good quick indication that instead of having a single attach method
+we can have multiple attach methods so that we can design the system in such a way 
+that it caters to multiple needs of observers. And those whose observers who are not
+really interested in some notifications then we can register the observers accordingly.
+
+********
+Downside:
+******** 
+This will surely increase the complexity of the observable but in the end 
+we will get a good benefit out of it.
+
+
+#################
+Consideration # 2
+#################
+Typically notifications are send out when an observable state changes. This identification 
+happens in the setter method where in we add the code to send notification 
+in every property wherein we have identified the state is supposed to change.
+
+So instead of writing the code which sends out notification in each of the setter methods
+what we can do.
+Put the notification sending code in the client code which is calling these setters.
+
+For example: We have an observable which has 10 properties which defines state change.
+Then for each of the property being changed a notification would be send out.
+Thus it would result in notification being send out 10 times.
+
+What if we take that notification sending code and put it in the client code which is 
+actually responsible for setting the state change properties.
+
+So we have a single notification being when all property updates have been completed.
+
+This result in sending out a notification to a single time compared to the notification being
+send 10 times.
+
+
+********
+Downside:
+********
+This might not be so easy to implement as there maybe multiple places from where
+an observable might be called.
+Additionally we are taking the responsibility in the client side for sending out notification
+and taking that away from the observable. And we might very well forget to send the 
+notification from the client code.
+
+
+
+
+

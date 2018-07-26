@@ -1,0 +1,28 @@
+=================
+PRIMARY FUNCTION:
+=================
+
+The primary function of an Adapter is to produce a unified interface for a number of underlying and unrelated objects.
+
+You will notice this pattern being utilised in many applications. For example, object-relational mapping) creates a 
+unified interface as part of its API but the code underneath the interface is able to communicate with many 
+different types of databases. Allowing the consumer of the API to not have to worry about specific database 
+implementation details.
+
+The principle structure of this pattern is:
+
+Current | Future
+----------------
+B(C)    | B(A)
+
+The B function cannot be changed and it is dependant on the interface that was originally provided by C, 
+but now we are passing in A which has an incompatible interface.
+
+An adapter can solve this by creating a new function A2C which contains the relevant logic for handling the
+ interaction between B and A.
+
+Current | Future
+----------------
+B(C)    | B(A2C(A))
+
+

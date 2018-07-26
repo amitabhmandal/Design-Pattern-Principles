@@ -1,0 +1,46 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Implementation and Design Consideration
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+________________
+Consideration #1
+________________
+We can easily build a immutable class by implementing as an static inner class.
+You will find this type of implementation used quite frequently even if the immutability is not
+even the concern.
+
+In this way we can make use of writing the setter methods as private and avoiding writing a
+bad constructor.
+
+This also incorporates the concept that using a builder as inner static class provides a nice 
+name space even though the immutability is of not main concern.
+
+
+________________
+Consideration #2
+________________
+The director role is rarely implemented as a seperate class typically the consumer of 
+the object instance or the client handles that role.
+
+
+
+________________
+Consideration #3
+________________
+Abstract builder is also not required if product itself is not part of inheritance hierarchy.
+You can directly create the concrete builder.
+
+
+________________
+Consideration #4
+________________
+If you are running into a "too many constructor arguments" problem then it is a good indication
+that builder may help. It is not necessary that it might be the only solution but then it will 
+easy to take a look at it.
+
+
+
+
+
+
+

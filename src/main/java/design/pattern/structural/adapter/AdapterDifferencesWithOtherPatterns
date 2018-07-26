@@ -1,0 +1,132 @@
+It is a structural pattern
+It is useful to work with two incompatible interfaces
+
+
+
+
+
+
+
+
+******************************************************************************************************
+Difference between Adapter and Bridge
+******************************************************************************************************
+1. Adapter makes things work after they're designed; Bridge makes
+them work before they are.
+
+2. Bridge is designed up-front to let the abstraction and the
+implementation vary independently. Adapter is retrofitted to make
+unrelated classes work together.
+
+The primary function of a Bridge is to decouple an abstraction from its implementation.
+The primary function of Adapter is to make unrelated classes work together.
+
+Bridge has to be designed up front then only we can have varying abstractions and implementations.
+Adapter finds its usage where a legacy system is to be integrated with a new one.
+
+An adapter "adapts" an existing class to a usually non-compatible client class. 
+Let's say that you have an old workflow system that your application is using as a 
+client. Your company could possibly replace the workflow system with a new
+ "incompatible" one (in terms of interfaces). In most cases, you could use the 
+ adapter pattern and write code that actually calls the new workflow engine's 
+ interfaces.
+ 
+ 
+A bridge is generally used in a different way. If you actually have a system 
+that needs to work with different file systems (i.e. local disk, NFS, etc.) 
+you could use the bridge pattern and create one abstraction layer to work with 
+all your file systems. This would basically be a simple use case for the bridge pattern
+
+      Adapter  |    Bridge
+    -----------|---------------
+    Target     | Abstraction
+    -----------|---------------
+               | RefinedAbstraction
+               |
+               |   This element is Bridge specific. If there is a group of 
+               |   implementations that share the same logic, the logic can be placed here.
+               |   For example, all cars split into two large groups: manual and auto. 
+               |   So, there will be two RefinedAbstraction classes.
+    -----------|--------------- 
+    Adapter    | Implementor
+    -----------|---------------
+    Adaptee    | ConcreteImplementor 
+
+****************************************************************
+Difference between Adapter and Proxy and Decorator
+****************************************************************
+Adapter provides a different interface to its subject.
+Proxy provides the same interface.
+Decorator provides an enhanced interface.
+
+Adapter is meant to change the interface of an existing object
+
+Decorator enhances another object without changing its interface.
+
+Decorator is thus more transparent to the application than an adapter is.
+
+As a consequence, Decorator supports recursive composition, which
+isn't possible with pure Adapters.
+
+
+***********************************************************************************
+Difference between Adapter and Decorator
+***********************************************************************************
+
+Difference #1
+Adapter : simply adapts an object to another interface without changing behavior
+Decorator : Enhances object behavior without changing it's interface
+
+Decorator: A decorator is indistinguishable from the object it decorates.
+
+Difference #2
+Adapter : Not easy to use recursive composition that is adapter adapting 
+another adapter since adapters change interface.
+As they are changing the interface of existing object
+
+Decorator: Since decorators do not change the interface of the original object 
+we can recursively do composition or in other words decorate with ease. 
+Since a decorator is indistinguishable from main object.
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Similarity between the design Patterns: They use composition
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+*****************************************************************************************************
+Difference between Adapter and Facade
+*****************************************************************************************************
+Facade defines a new interface, whereas Adapter reuses an old
+interface.
+
+Remember that Adapter makes two existing interfaces work
+together as opposed to defining an entirely new one.
+
+The Facade and the adapter do share some properties but facades are usually 
+used to simplify an existing interface/class. In the early days of EJBs there 
+were no local calls for EJBs. Developers always obtained the stub, narrowed it 
+down and called it "pseudo-remotely". This often times caused performance problems
+ (esp. when really called over the wire). Experienced developers would use the 
+facade pattern to provide a very coarse-grained interface to the client. 
+This facade would then in turn do multiple calls to different more fine-grained methods. 
+All in all, this greatly reduced the number of method calls required and increased performance.
+
+The difference between a Facade and an Adapter is that the Facade makes a simple abstraction, 
+where as an Adapter will handle complex interactions by taking incoming data and constructing it to work 
+with the underlying objects.
+
+Key notes:
+
+Adapter provides a different interface to its subject. 
+Proxy provides the same interface. 
+Decorator provides an enhanced interface.
+Adapter changes an object's interface, 
+Decorator enhances an object's responsibilities.
+Decorator and Proxy have different purposes but similar structures
+Adapter makes things work after they're designed; 
+Bridge makes them work before they are.
+Bridge is designed up-front to let the abstraction and the implementation vary independently. 
+Adapter is retrofitted to make unrelated classes work together
+Decorator is designed to let you add responsibilities to objects without subclassing.

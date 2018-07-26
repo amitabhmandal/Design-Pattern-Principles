@@ -1,0 +1,65 @@
+++++++++++++++++++
+consideration ** 1
+++++++++++++++++++
+
+******************
+Watch Out for this:
+******************
+In some rare scenarios we might fall into rare circular update loops.
+
+------------------------------
+What happens in this scenario?
+------------------------------
+An update is done to observable state.
+So it sends out a notification.
+That notification is consumed by an observer.
+That observer might take some action based on the notification received.
+If that action results in an update to that observable again.
+
+Then the observable will send an update notification.
+
+If the observer send the same action again then which results in update in observable.
+and we are again going to get a notification and again going to take the same action.
+
+So it results in an infinite loop here.
+
+++++++++++++++++++
+consideration ** 2
+++++++++++++++++++
+------------------------------------------------------------
+An Obser	ver can listen for changes in multiple subjects. 
+------------------------------------------------------------
+It becomes quite easy to identify originator for the notification if subjects pass
+a reference to themselves in notification to observer.
+
+An observer interface has a single method update wherein the observable is being passed in.
+So while implementing the observer interface the concrete implementation can check
+which observable has been changed and depending on it can drive the business logic.
+
+Thereby a single observer is capable of listening to multiple observable state changes.
+
+++++++++++++++++++
+consideration ** 3
+++++++++++++++++++
+Performance can be an issue if we are using a high number of observers exists in the 
+observer design pattern system.
+
+And this becomes specially true if there are high number of objects being registered to the
+single subject or observable.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+How can performance impact the observer design pattern system?
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Problem being if one or more observers are slow and take lot of time while processing 
+notifications then it can break an entire system.
+
+This can result in piling up of pending notifications or missed notifications.
+Hence recommendation is to keep the observer method as small as possible and 
+do not do any heavy calculations.
+
+++++++++++++++++++
+consideration ** 4	
+++++++++++++++++++
+
+
+

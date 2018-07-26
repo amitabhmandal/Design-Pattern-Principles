@@ -1,0 +1,24 @@
+Class which is using the Null Object should not do anything special when working with this object
+
+What do nothing means for an operation depends on the context of the application we are 
+working with in different classes.
+This is especially true where methods in null objects are expected to return values.
+
+So for example the actual method is supposed to return int then the null object returning
+0 will make it sense needs to be carefully looked at or returning 1 makes more sense.
+
+If you find the need where your null object has to transform into a real object then you better 
+use something like a state pattern with a null object as one of the states.
+
+So we can have the behavior of normal object as one state and then the null object will be 
+another implementation of another state object which will do nothing.
+
+So whenever you see your null object is going to translate into a real object then don't use
+null object pattern then use a state pattern wherein it has a null state.
+
+
+
+ 
+
+
+

@@ -1,0 +1,26 @@
+Cohesion Principle:
+
+What is it?
+It is narrow focussed and does one thing well.
+
+Then it is said to be highly cohesive.
+
+Cohesive code is a code which is not taking too many responsibility.
+
+If a code is cohesive it has to change less frequently.
+Like things are kept together and unlike things are far from each other.
+
+Hence high cohesion brings the cost of the things lower.
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 

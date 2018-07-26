@@ -1,0 +1,30 @@
+What is a good design?
+
+Design is good, Because I created it. (Funny .. haha).
+
+Objective in defining a good design:
+
+A design is good if the cost of changing the design is minimum.
+Thus if a change requirements comes in then I am not going to spend too much time
+and effort in changing it.
+
+
+Problem with the Above definition:
+In reality what happens when the change requirement comes in we look at the design
+and we can figure it is horrible and safely assume that we messed up.
+
+
+A very good way to test the design?
+Thus to sum up a good design is something which is easier to change. Maybe we can
+do one thing is subjecting the design to change and see how the design stands up.
+
+
+Almost impossible to get it right at the first time.
+
+
+SOFTWARE IS NEVER WRITTEN, IT IS ALWAYS RE-WRITTEN.
+
+
+
+
+

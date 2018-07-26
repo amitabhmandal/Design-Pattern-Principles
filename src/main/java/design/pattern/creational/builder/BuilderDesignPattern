@@ -1,0 +1,27 @@
+@@@@@@@@@@@
+What it is?
+&&&&&&&&&&&
+
+______________________________
+PROBLEM STATEMENT #1 IT SOLVES
+______________________________
+When we have a complex process to construct to an object involving multiple steps,
+then the builder pattern can help us.
+=====================
+Complexity Definition:
+=====================
+Complexity can be in terms of arguments that the constructor needs.
+OR 
+complexity can be in terms of steps needed to create the object.
+OR
+
+
+______________________________
+PROBLEM STATEMENT #2 IT SOLVES
+______________________________
+
+In builder we remove the logic related to object construction from client code, and
+abstract it in a seperate class so that the user of the object can easily create objects.
+
+
+

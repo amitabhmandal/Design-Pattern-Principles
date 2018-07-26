@@ -1,0 +1,28 @@
+YAGNI : You are'nt gonna Need It (yet - This is an additional context)
+
+We tend to implement so many things which we are not going to need it yet.
+
+This is one of the ways in which we can remove complexity.
+If we dont design things which we are not going to need it then the system 
+stays simple as expected. Thereby we are reducing inherent complexity.
+
+
+When should I implement something?
+
+First question we should know: 
+1. How much do you know?
+2. Cost of Implementing it. Should I implement it now or Later?
+	Now 						Later
+	System is incomplete		More knowledge will get tomorrow
+	$N					> 	$L  then we should definitely postpone
+	$N 					=   $L  then we should definitely postpone
+	$N					<   $L  
+							how probable? high do it now
+							low         - postpone  
+	
+
+
+
+ 
+
+ 

@@ -1,0 +1,11 @@
+Implementation Details:
+
+First we design an Interface Visitor which is going to have a method for each concrete class we
+want to support.
+
+The classes who want the functionalities provided by Visitor define "accept" method 
+which accept a visitor.
+
+These methods are defined using the visitor interface as parameter type so that we can 
+pass any class implementing the visitor to these methods.
+

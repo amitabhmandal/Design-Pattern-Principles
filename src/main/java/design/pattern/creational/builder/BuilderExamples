@@ -1,0 +1,17 @@
+-----------------------------------
+Real World Applications of Builer
+___________________________________
+
+
+************
+Example : 1
+************
+The java.lang.StringBuffer class as well as various buffer classes are examples of Builder
+Pattern.
+
+Also in java.nio package ByteBuffer and CharBuffer are also some of the examples.
+
+
+************
+Example : 2
+************

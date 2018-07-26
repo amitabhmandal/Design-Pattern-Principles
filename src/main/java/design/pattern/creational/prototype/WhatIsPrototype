@@ -1,0 +1,23 @@
+***********
+Definition:
+***********
+
+When we have to create an Object that is Costly.
+
+Costly can be measured in terms of 
+
+1. performance or 
+2. calculation 
+3. Or can be measured in terms of which are not in our control.
+
+So whenever we have an object such that whenever to create the object we use that single object
+or existing object as our prototype.
+
+
+Prototype allows us to make copies of existing object and save us from having to create objects
+from scratch.
+
+
+
+
+

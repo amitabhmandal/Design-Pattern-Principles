@@ -1,0 +1,57 @@
+-------------------------
+What is decorator Pattern
+-------------------------
+Decorator pattern dynamically changes the functionality of an object at 
+run-time without impacting the existing functionality of the objects.
+
+---------------
+How does it do?
+---------------
+Decorator wraps the object within itself, and provides same interface
+as the wrapped object. So the client of the original object does not need
+to change.
+
+---------------------------
+Good thing about Decorator:
+---------------------------
+A decorator provides good alternative to subclassing for extending 
+functionality of existing classes.
+
+
+Key use cases:
+
+Add additional functionalities/responsibilities dynamically
+Remove functionalities/responsibilities dynamically
+Avoid too much of sub-classing to add additional responsibilities.
+
+
+Drawbacks:
+
+Overuse of Open Closed principle ( Open for extension and Closed for modification).
+ Use this feature sparingly where the code is least likely changed.
+Too many small classes and will add maintenance overhead.
+
+--------------------
+Implementation Steps
+--------------------
+We start with our component
+
+Step #1
+Component defines interface needed or already used by client
+
+Step #2
+Concrete component implements the component
+
+Step #3
+We define our decorator. Decorator implements component and also needs 
+reference to concrete component
+
+Step #4
+In decorator methods we provide additional behavior on top that provided by 
+concrete component instance.
+
+Step #5
+Decorator itself can be abstract as well and depend on subclasses to provide
+functionality.
+
+

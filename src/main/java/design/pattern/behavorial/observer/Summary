@@ -1,0 +1,32 @@
+----------
+Summary #1
+----------
+Observer pattern allows to define one to many relationships between objects 
+where many objects are interested in state change of a subject/observable.
+
+----------
+Summary #2
+----------
+Observer registers themselves with the subject which then notifies all
+registered observers if any state change occurs.
+
+----------
+Summary #3
+----------
+In the notification being sent to observers it is common only to send reference
+of subject instead of state values. 
+Observers will call back the subject to identify back for more information if needed.
+
+----------
+Summary #4
+----------
+We can also register observers for a specific event only. Resulting in improved performance
+of sending notification in the subject.
+
+----------
+Summary #5
+----------
+This design pattern is also called publisher/subscriber design pattern. Java messaging 
+uses this pattern instead of registering with subjects listeners register with a message
+broker which acts as a middleman.
+

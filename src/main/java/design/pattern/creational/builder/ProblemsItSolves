@@ -1,0 +1,127 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+What problems Builder Pattern It Solves
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+++++++++++++++++++++
+Problem Statement #1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Immutable Object creation or constructor with many arguments.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Let's say we have a requirement that object of a class shall be created as Immutable.
+
+Immutable Object is an object whose state or properties cannot change once the class has been
+created.
+
+
+String class is a great example of Immutable class. 
+So once a String class is created it's value
+cannot be changed.
+
+When we are writing immutable classes then we end up writing classes with multiple
+parameters. This is because we have to provide the state parameters of the object within the 
+constructor itself.
+
+Having a constructor or method with many parameters is considered bad programming practice.
+
+Because anyone who is using the code will need to find all those parameters mean so that he can
+pass those values in the right sequence.
+
+And the problem is compounded if the arguments are of same or similar data types.
+
+for instance
+class Product {
+
+	public product(int weight, double price, int shipVolume, int shipCode){
+	//Initialize values
+	}
+	
+	//Other code
+	
+}
+
+The problem with the above code is that constructor in the Product class is receiving parameters
+whose datatype is of same type ie int.
+
+We distribute our code in a compile file to other developers.
+So the parameter name is of no use.
+
+The only way they can find about these parameters is by referring to the code documentation.
+
+Builder Design Pattern can really help us in these situations.
+
+It will help us in two ways.
+First it will make it easy to use such constructors so that developers can use them to create 
+objects of the class.
+
+Secondly, It will help us avoid writing constructors in the first place and still have our objects
+immutable.
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+What other Problems it can solve?
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+++++++++++++++++++++
+Problem Statement #2
+----------------------------------------------------------
+Objects that need other objects or parts to construct them.
+----------------------------------------------------------
+
+class Address{
+	public Address(String houseNumber, String street, ......){
+	//Initialize
+	}
+	
+	//other code
+}
+
+class User{
+	public User(String userName, Address address, List<Role> role,  .....){
+	//Initialize
+	}
+	
+	
+	//other code
+}
+
+Thus the user class is dependent on the address Object and the Role object.
+
+Hence we can think of Address and Role objects as the parts which we need to assemble the
+user object.
+
+************************************************************************************************
+So whenever we have a requirement we have several parts which constitute an object we should be
+using the builder design pattern.
+************************************************************************************************
+
+
+++++++++++++++++++++
+Problem Statement #3
+++++++++++++++++++++
+****************************************************************
+When certain steps that needs to be followed for object creation
+****************************************************************
+
+Another interesting aspect about the User object construction is that we have to follow certain
+steps.
+
+Step 1: First we have to create Address Object
+Step 2: We have to Role Object
+Step 3: We have to create a role collection object
+
+Thus we have to follow steps 1, 2 and 3 and then we can go ahead with the creation of user object.
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
