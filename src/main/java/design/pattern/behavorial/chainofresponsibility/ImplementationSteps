@@ -1,0 +1,23 @@
+we start by defining handler which can be a interface or abstract class
+
+Handler must define a method to accept incoming request
+
+Handler can also define method to access successor in chain. If it's an abstract class
+then we can have even maintain successor.
+
+Handler can also define method to access successor in chain. If it's an abstract class
+then we can even maintain successor.
+
+Next we implement handler in one or more concrete handlers. Concrete handler should check
+if it can handle the request. If not then it should pass request to next handler.
+
+
+We have to create our chain of objects next. We can do it by the client.
+Typically in real world this job, will be done by some framework or initialization code done by 
+you.
+
+
+Client needs to know about the first object in the chain. It will pass on request to this object.
+
+
+

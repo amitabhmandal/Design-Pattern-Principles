@@ -1,0 +1,15 @@
+We use interpreter design pattern when we want to solve a very specific type of problem
+
+What is the problem statement?
+
+We want to use interpreter design pattern when we want to process a simple 
+language with rules or grammer.
+
+For example: File Access requires use role and admin role.
+
+It solves very simple statements and does not solve complex problems as represented
+by natural processing.
+
+Interpreter allows us to represent the rules of language or grammer in a datstructure
+and then interpret the sentences that are written in that language.
+

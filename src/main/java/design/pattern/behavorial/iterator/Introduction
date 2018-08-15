@@ -1,0 +1,38 @@
+@@@@@@@@@@@@@@@@@@@
+What is a Iterator?
+@@@@@@@@@@@@@@@@@@@
+
+Iterator allows a way to access elements/children of an aggregate object in sequence
+while hiding the actual internal data structure used.
+
+An aggregate object is an object which has more aggregate object as it's state. So it has
+a collection inside it.
+
+And if we want to give access to these elements which inside our aggregate object
+in a sequential manner then we can use iterator design pattern.
+
+Using Iterator helps to hide the actual data-structure.
+
+So our aggregate object might be using an array inside it or might be using an inbuilt
+java collection object.
+
+This object will provide a method to get an iterator which will be used by our client code
+
+Iterators are stateful meaning an iterator object remembers the position while iterating
+
+And while iterating through the aggregate object if they change the state of the aggregate
+then the iterator becomes invalid.
+
+Iterator works on the principle the state of the aggregate object remains constant.
+
+For example let's say we have an iterator that has told the client code there is an 
+element available for consumption next but in the meantime if someone clears out that 
+collection element and the client code calls on the iterator next then the iterator would 
+be in problem as it cannot provide the next element as the underlying collection has been
+cleared out.
+
+So iterators are very sensitive to the underlying collection.
+
+
+
+

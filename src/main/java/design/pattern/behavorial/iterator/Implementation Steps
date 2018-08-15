@@ -1,0 +1,20 @@
+We start be defining our Iterator interface.
+
+An iterator interface has methods to 
+1. To find the next element
+2. Whether there is an element available
+
+
+Client will be working with that interface.
+
+
+Once the interface has been designed.
+We then implement the iterator in a class.
+This is typically an inner class in our concrete aggregate. Making it an inner class
+makes it easy, to access internal data structures.
+
+
+Concrete iterator needs to maintain state to tell it's position in collection 
+of aggregate. If the inner collection changes it can throw an exception to indicate invalid
+state.
+

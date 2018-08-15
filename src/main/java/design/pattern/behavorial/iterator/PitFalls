@@ -1,0 +1,10 @@
+#1
+Access to index during iteration is not readily available like we have in for loop.
+This problem we can see when we access Java collection iterator interface then we dont 
+get access to the index of the collection.
+
+#2
+Making modification to the collection while the interator is iterating over the 
+aggregate object oftem makes the iterator invalid instance as it's state may not be valid.
+
+

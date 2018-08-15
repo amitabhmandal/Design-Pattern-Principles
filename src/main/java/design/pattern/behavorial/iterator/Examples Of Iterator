@@ -1,0 +1,8 @@
+The iterator present in Java collection classes are great example of iterator design pattern.
+
+The concrete iterators are typically inner classes in each collection class implementing
+java.util.iterator interface.
+
+java.util.Scanner is also an example of Iterator pattern. This class supports InputStream as
+well and allows to Iterate over a Stream.
+

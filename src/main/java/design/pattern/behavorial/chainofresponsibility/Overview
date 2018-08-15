@@ -1,0 +1,31 @@
+What it is?
+
+Whenever we want to avoid the coupling between the code which sends requests for some
+functionality and the code which handles the request or provides functionality for that 
+request then we should use chain of responsibility.
+
+
+How it solves the problem:
+
+Typically the code which wants some request handled calls the exact method on an object
+to process it thus tight coupling
+
+What Chain of responsibility does to solve in the case of above problem?
+Chain of responsibility solves the problem by giving more than one oject to solve the problem
+
+
+How it is implemented
+
+We create objects which are chained together by one object knowing reference of object
+which is next in line.
+We give the request to the first object in chain, if it can't handle that it simply
+the request down the chain.
+
+
+Downside of the chain of Responsibility:
+
+There is no gaurantee that the request will be handled. It might be cascaded from one 
+object to another. In the end it might be a possibility that the request handler runs out 
+of the chain and the request is never handled.
+
+  

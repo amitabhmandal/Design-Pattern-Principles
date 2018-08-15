@@ -1,0 +1,12 @@
+Whenever we want to iterate or give sequential access to elements of aggergate object we can
+use iterator design pattern.
+
+Iterator needs to access to the internal data structure of of aggregator to provide it's
+functionality. This usually means it is quite common to have iterator implemented as inner classes
+
+Iterator allows the client code to check whether there is an element available to consume
+and give next available element.
+
+Iterators allows us to give sequential access, however we can also provide reverse
+or bi-directional iterator depending on the underlying data structure.
+

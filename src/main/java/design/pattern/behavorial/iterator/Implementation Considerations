@@ -1,0 +1,23 @@
+Consideration #1
+Detecting changes to the underlying data structure while some code is using an interator
+is important to notify to the client because then our iterator may not work correctly
+
+It such a thing happens then we are violating the contract with our client that is using it.
+
+So while we are executing hasNext() and if someone changes the underlying datastructure then
+we should throw an exception after detecting it.
+
+
+
+Consideration #2
+Having an iterator implementation as inner class makes it easy to access internal collection of 
+aggregate objects.
+The reason we use iterator is that we dont want to give access to the internal collection 
+to the outside world. We want the freedom to change the internal representation of how
+we are storing objects.
+However the inner class gets access to those fields so that it can provide access to these elements
+It can also detect whether the underline collection has also changed.
+
+
+
+
