@@ -6,7 +6,6 @@ public class SimpleFactoryTester {
         PostFactory.createPost("blog");
         PostFactory.createPost("news");
         PostFactory.createPost("product");
-
     }
 
 }

@@ -1,0 +1,48 @@
+What it is?
+It is a creational pattern not identified in the gang of four
+Abstract Factory 
+Builder
+Factory Method
+Prototype
+Singleton
+
+It was more of a pattern identified in use in Enterprise Applications to help find client
+services on remote servers.
+
+We see it referenced in the core J2EE Business Tier
+
+With the advent of Inversion of Control containers such as Spring Etc we find it increasingly being
+used helps to decouple the calling class from the dependent objects.
+
+
+When to Use it?
+
+Implementation of Inversion of Container is done typically through either of the patterns
+1. Service Locator
+2. Dependency Injection 
+3. Factory Pattern
+
+
+Why we need to use it?
+To simplify the code.
+Provide seperate responsibilities
+and increase maintainbility
+
+Intent:
+The pattern is designed to abstract applications from the services it uses or consumer 
+from the producer. or Allow each to be independent of the other.
+
+The service locator will play the middleman and will allow the consumer application to find 
+and connect with the service.
+
+The goal is to allow in change of the service without the recompilation of the application.
+
+We wish to identify the service through the configuration or change the service depending on the
+conditions.
+
+The ultimate goal is to allow the non-programmers to adjust the configurations so that services
+can be changed withtout the help of the programmers.
+
+Real world examples. 
+1. 
+

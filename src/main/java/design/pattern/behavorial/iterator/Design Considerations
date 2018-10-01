@@ -2,4 +2,4 @@ Always prefer iterator interface so that you can change the implementation witho
 affecting client.
 
 Iterator have many applications where a collection is not used but still we want to to give a
-sequential access to information for example 
+sequential access to information for example may be for reading lines from file, from network
