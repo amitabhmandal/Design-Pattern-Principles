@@ -15,3 +15,6 @@ Also in java.nio package ByteBuffer and CharBuffer are also some of the examples
 ************
 Example : 2
 ************
+An example would be to create your own computer.
+
+different parts are assembled depending on the order received 

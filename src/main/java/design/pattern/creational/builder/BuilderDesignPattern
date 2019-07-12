@@ -1,6 +1,16 @@
 @@@@@@@@@@@
 What it is?
 &&&&&&&&&&&
+The builder design pattern separates the construction of complex object from it's representations.
+It uses the same construction process to create the same object.
+However the processes can create different representations of the object
+
+You really use the  builder pattern when you have lots of complexity in terms of parameters.
+
+uses simple objects and a step by step approach to create the object
+the builder class is independent of others.
+
+
 
 ______________________________
 PROBLEM STATEMENT #1 IT SOLVES
